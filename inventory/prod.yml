@@ -1,9 +1,13 @@
 ---
-  clickhouse:
-    hosts:
-      clickhouse:
-        ansible_connection: docker
-  vector:
-    hosts:
-      vector:
-        ansible_connection: docker
+clickhouse:
+  hosts:
+    clickhouse-01:
+      ansible_host: ans@158.160.68.102
+vector:
+  hosts:
+    vector-01:
+      ansible_host: ans@158.160.67.130
+lighthouse:
+  hosts:
+    lighthouse-01:
+      ansible_host: ans@158.160.26.231
